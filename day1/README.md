@@ -35,4 +35,6 @@ Feel free to mess around with different files.
 
 If you want to run part two of day one, simply enter 1 as a command line argument when running `notlisp`.
 
-Example: `./notlisp 1`
+Example:
+
+`./notlisp 1`
