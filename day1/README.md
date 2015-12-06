@@ -30,3 +30,5 @@ To what floor do the instructions take Santa?
 The only thing you have to do for this program is to make sure you have a file that is named `input` in the same directory as the executable (or as the `.go` file if you use `go run`).
 
 Feel free to mess around with different files.
+
+`input.copy` is a copy of the original input file which allows you to mess around with `input` without losing the original solution.
