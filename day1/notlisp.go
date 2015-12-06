@@ -17,21 +17,22 @@ func main() {
 
   inputString := string(input)
   fmt.Println(inputString)
-  floor, err := calculateFloor(inputString)
+  floor, count, err := calculateFloor(inputString)
 
   handleError(err)
 
-  fmt.Printf("Santa should go to Floor %d!\n", floor)
+  fmt.Printf("Santa should go to Floor %d!\nThe instructiones were %d characters long!\n", floor, count)
 }
 
 // Calculates the floor that Santa should go to by checking each character and incrementing and decrementing as such.
 // Stops at the first newline character.
-// Returns an error if there is an invalid character.
-func calculateFloor(input string) (int, error){
+// If there is a character that is not a newline, ( or ) , this function will return the floor on which Santa ended up,
+// the instruction (index) where that character was, and an error.
+func calculateFloor(input string) (int, int, error){
 
   result := 0
-
-  for i := 0; i < len(input); i++{
+  i := 0
+  for i = 0; i < len(input); i++{
     //fmt.Println("Calculating \"" + string(input[i]) + "\". . .")
     if string(input[i]) == ")"{
       result--
@@ -40,11 +41,12 @@ func calculateFloor(input string) (int, error){
     } else if string(input[i]) == "\n"{
       break
     } else{
-      return 0, errors.New("Invalid type")
+      fmt.Printf("Got to floor %d before the input broke at instruction %d.\n", result, i)
+      return result, i, errors.New("Invalid type; remember, you can only use \"(\" and \")\"!")
     }
   }
 
-  return result, nil
+  return result, i, nil
 }
 
 // Poor man's error handling.
