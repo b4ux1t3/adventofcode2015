@@ -16,6 +16,5 @@ While I intend to only submit changes that include working code, I make no guara
 Additionally, the .gitignore will be updated to include languages as I go, but I can't promise that there will be no conflicts. That means that the contents of one git ignore might cause certain files to not work correctly. Because of the nature of git, this shouldn't happen, as I'll only be uploading one directory at a time. Still, run at your own risk.
 
 #Languages:
-
 * [Go](http://golang.org)
 * [Python](http://python.org)
