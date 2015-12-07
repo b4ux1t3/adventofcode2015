@@ -25,7 +25,7 @@ func main() {
   if len(os.Args) < 2 || os.Args[1] == "0"{
     floor, count, err := calculateFloor(inputString)
     handleError(err)
-    fmt.Printf("Santa should go to Floor %d!\nThe instructiones were %d characters long!\n", floor, count)
+    fmt.Printf("Santa should go to Floor %d!\nThe instructions were %d characters long!\n", floor, count)
   } else if os.Args[1] == "1"{
     floor, count, err := calculateFloorNegOne(inputString)
     handleError(err)
