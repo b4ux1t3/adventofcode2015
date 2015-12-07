@@ -20,7 +20,7 @@ func main() {
   // Convert the input file to a string
   inputString := string(input)
 
-  //fmt.Println(inputString)
+  fmt.Println(inputString)
 
   if len(os.Args) < 2 || os.Args[1] == "0"{
     floor, count, err := calculateFloor(inputString)
@@ -30,6 +30,8 @@ func main() {
     floor, count, err := calculateFloorNegOne(inputString)
     handleError(err)
     fmt.Printf("Santa hit Floor %d at instruction %d!\n", floor, count)
+  } else {
+    fmt.Println("Invalid argument. Use 1, 0, or nothing.")
   }
 
 
@@ -65,9 +67,9 @@ func calculateFloor(input string) (int, int, error){
 // Stops at the first newline character.
 // If there is a character that is not a newline, ( or ) , this function will return the floor on which Santa ended up,
 // the instruction (index) where that character was, and an error.
-//If Santa never goes to Floor -1, this function will return the ending floor, the number of instructions, and an error
+// If Santa never goes to Floor -1, this function will return the ending floor, the number of instructions, and an error
 // NOTE: This function is called if the 1th argument is 1
-// NOTE: This is for part two of the problem
+// NOTE: This is for part two of the problem 
 func calculateFloorNegOne(input string) (int, int, error){
 
   result, i := 0, 0
