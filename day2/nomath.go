@@ -13,5 +13,11 @@ func main(){
 	
 	// Split each of the resulting strings into length, width, and height by using x as a delimiter
 	
-	//
+	// Determine the area of each side
+	// This should be a for loop that performs a function
+	// on each of the elements in the array created above
+	// Add up the areas, including the extra area needed 
+	// for slack.
+	
+	
 }
