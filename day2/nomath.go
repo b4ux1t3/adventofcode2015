@@ -27,6 +27,7 @@ func main(){
 	// Split each of the resulting strings into length, width, and height by using x as a delimiter
 	// temp will hold the split strings until we go through and convert them into ints
 	// side is an iterator that is declared outside of the loop to save a bit of time in large datasets
+	// TODO: Break this out into a function
 	var side int
 	for line := 0; line < len(newLineSplit) - 1; line++{
 		temp := strings.Split(newLineSplit[line], "x")
