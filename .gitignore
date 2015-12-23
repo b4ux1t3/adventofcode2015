@@ -88,3 +88,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Java
+*.class
