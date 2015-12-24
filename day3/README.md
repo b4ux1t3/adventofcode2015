@@ -17,7 +17,7 @@ For example:
 
 #Instructions
 
-The only thing you have to do for this program is to make sure you have a file that is named `input` in the same directory as the executable (or as the `.go` file if you use `go run`).
+The only thing you have to do for this program is to make sure you have a file that is named `randout` or `randout3d` in the same directory as the executable (or as the `.go` file if you use `go run`). You can change it to use the `input` file by changing the code and rebuilding the executable.
 
 Feel free to mess around with different files.
 
