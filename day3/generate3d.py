@@ -10,7 +10,7 @@ output = ""
 for x in range(int(sys.argv[1])):
     output += random.choice(choices)
 
-f = open("randout", "w")
+f = open("randout3d", "w")
 
 f.write(output)
 

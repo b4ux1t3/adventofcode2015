@@ -12,7 +12,7 @@ type Vertex struct{
 
 func main() {
   // Read the string from a file
-  input, err := ioutil.ReadFile("randout")
+  input, err := ioutil.ReadFile("randout3d")
 
   handleError(err)
 
