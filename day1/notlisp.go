@@ -20,7 +20,7 @@ func main() {
   // Convert the input file to a string
   inputString := string(input)
 
-  fmt.Println(inputString)
+  //fmt.Println(inputString)
 
   if len(os.Args) < 2 || os.Args[1] == "0"{
     floor, count, err := calculateFloor(inputString)
@@ -69,7 +69,7 @@ func calculateFloor(input string) (int, int, error){
 // the instruction (index) where that character was, and an error.
 // If Santa never goes to Floor -1, this function will return the ending floor, the number of instructions, and an error
 // NOTE: This function is called if the 1th argument is 1
-// NOTE: This is for part two of the problem 
+// NOTE: This is for part two of the problem
 func calculateFloorNegOne(input string) (int, int, error){
 
   result, i := 0, 0

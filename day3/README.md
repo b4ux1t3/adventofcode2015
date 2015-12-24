@@ -22,9 +22,3 @@ The only thing you have to do for this program is to make sure you have a file t
 Feel free to mess around with different files.
 
 `input.copy` is a copy of the original input file which allows you to mess around with `input` without losing the original solution.
-
-If you want to run part two of day one, simply enter 1 as a command line argument when running `sphericalhouses`.
-
-Example:
-
-`./sphericalhouses 1`
