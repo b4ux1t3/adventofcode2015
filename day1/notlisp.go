@@ -13,7 +13,7 @@ import (
 func main() {
 
   // Read the string from a file
-  input, err := ioutil.ReadFile("input")
+  input, err := ioutil.ReadFile("randout")
 
   handleError(err)
 
