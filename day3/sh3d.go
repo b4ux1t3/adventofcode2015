@@ -7,7 +7,7 @@ import(
 )
 
 type Vertex struct{
-  X, Y int
+  X, Y, Z int
 }
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
   inputString := string(input)
 
   // Variables to store current location and visted houses.
-  x, y := 0, 0
+  x, y, z := 0, 0, 0
   var visited map[Vertex]int
   visited = make(map[Vertex]int)
 
@@ -32,6 +32,7 @@ func main() {
     // Combine the coordinates into a string.
     coord.X = x
     coord.Y = y
+    coord.Z = z
     //fmt.Printf("Checking coordinate: %d, %d\n" , coord.X, coord.Y)
 
     // Check if the given coordinate has been visited
@@ -54,6 +55,10 @@ func main() {
       x++
     } else if string(inputString[i]) == "<"{
       x--
+    } else if string(inputString[i]) == "u"{
+      z++
+    } else if string(inputString[i]) == "u"{
+      z--
     }
   }
 
