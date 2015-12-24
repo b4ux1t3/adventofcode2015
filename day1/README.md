@@ -25,6 +25,16 @@ For example:
 
 To what floor do the instructions take Santa?
 
+#Part 2
+
+Now, given the same instructions, find the position of the first character that causes him to enter the basement (floor -1). The first character in the instructions has position 1, the second character has position 2, and so on.
+
+For example:
+
+`)` causes him to enter the basement at character position 1.
+`()())` causes him to enter the basement at character position 5.
+What is the position of the character that causes Santa to first enter the basement?
+
 #Instructions
 
 The only thing you have to do for this program is to make sure you have a file that is named `randout` in the same directory as the executable (or as the `.go` file if you use `go run`). You can change it to use the `input` file by changing the code and rebuilding the executable.
