@@ -28,9 +28,10 @@ For example:
 `^v` delivers presents to `3` houses, because Santa goes north, and then Robo-Santa goes south.
 `^>v<` now delivers presents to `3` houses, and Santa and Robo-Santa end up back where they started.
 `^v^v^v^v^v` now delivers presents to `11` houses, with Santa going one direction and Robo-Santa going the other.
+
 #Instructions
 
-The only thing you have to do for this program is to make sure you have a file that is named `randout` or `randout3d` in the same directory as the executable (or as the `.go` file if you use `go run`). You can change it to use the `input` file by changing the code and rebuilding the executable.
+Part 2 is not implemented. To run the latest version, build the `sphericalhouses2.go` file. It will ask for the filename.
 
 Feel free to mess around with different files.
 
