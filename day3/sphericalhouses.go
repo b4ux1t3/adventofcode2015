@@ -4,6 +4,8 @@ import(
   "fmt"
   "io/ioutil"
   "log"
+  "bufio"
+  "os"
 )
 
 type Vertex struct{
@@ -11,8 +13,15 @@ type Vertex struct{
 }
 
 func main() {
+
+  // Get the file name from the user
+  reader := bufio.NewReader(os.Stdin)
+  fmt.Print("Ho ho ho, where are the instructions?: ")
+  fileName, err := reader.ReadString('\n')
+  handleError(err)
+
   // Read the string from a file
-  input, err := ioutil.ReadFile("randout")
+  input, err := ioutil.ReadFile(fileName)
 
   handleError(err)
 
@@ -57,7 +66,7 @@ func main() {
     }
   }
 
-  // Now we just need to print how many elements thre are in our map.
+  // Now we just need to print how many elements there are in our map.
   fmt.Printf("%d houses visited.\n", len(visited))
 }
 

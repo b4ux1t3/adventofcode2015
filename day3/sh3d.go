@@ -4,6 +4,8 @@ import(
   "fmt"
   "io/ioutil"
   "log"
+  "bufio"
+  "os"
 )
 
 type Vertex struct{
@@ -11,8 +13,14 @@ type Vertex struct{
 }
 
 func main() {
+
+  // Get the file name from the user
+  reader := bufio.NewReader(os.Stdin)
+  fmt.Print("Enter text: ")
+  fileName, err := reader.ReadString('\n')
+  handleError(err)
   // Read the string from a file
-  input, err := ioutil.ReadFile("randout3d")
+  input, err := ioutil.ReadFile(fileName)
 
   handleError(err)
 
